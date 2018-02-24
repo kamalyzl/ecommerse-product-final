@@ -1,4 +1,4 @@
-# E-commerce
+# E-commerce Produc Final
 
 * **Track:** _Especialización Front-end_
 * **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
