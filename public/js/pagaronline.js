@@ -9,11 +9,13 @@ Culqi.settings({
   description: 'Polo/remera Culqi lover', // Descripción acerca de la compra
   amount: 3500 // Monto de la compra (sin punto decimal, en este caso 35.00 soles)
 });
+
 $('#buyButton').on('click', function (e) {
   // Abre el formulario con las opciones de Culqi.settings
   Culqi.open();
   e.preventDefault();
 });
+
 // Recibimos el token desde los servidores de Culqi
 function culqi() {
   if (Culqi.token) { // Token creado exitosamente!
