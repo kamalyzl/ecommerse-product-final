@@ -5,4 +5,4 @@ function on() {
   console.log('Servidor encendido');
 }
 
-app.use(express.static('public')); // cuando uses express static y la carpeta se llama 'public'
+app.use(express.static('public')); // cuando uses express static, la carpeta se llama 'public'

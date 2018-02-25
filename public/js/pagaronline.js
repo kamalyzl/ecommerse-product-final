@@ -1,6 +1,13 @@
-/*  Configurando el checkout */
+// Configurando el checkout 
 
-Culqi.publicKey = 'pk_test_FP96YFVHPBdhfKqt';
+Culqi.publicKey = 'sk_test_v2XDSHbFpfjBRA5q';
+Culqi.settings({
+  title: 'Culqi Store',
+  currency: 'PEN',
+  description: 'Polo/remera Culqi lover',
+  amount: 3500
+  });
+
 Culqi.init();
 
 //Aquí creamos el Token en Culqi con la información de la tarjeta
@@ -10,8 +17,20 @@ function culqi() {
   if(Culqi.token) { // ¡Token creado exitosamente!
       // Obtener el token ID:
       var token = Culqi.token.id;
-      alert('Se ha creado un token:' + token);
-
+      $.ajax({
+        url: '',
+        data: {
+          token: token,
+          monto: 200 
+        },
+        type: 'JSON',
+        success: function(data){
+          console.log(data);
+        },
+        error: function(error_data){
+          console.log(error_data);
+        },
+      })
   }else{ // ¡Hubo algún problema!
       // Mostramos JSON de objeto error en consola
       console.log(Culqi.error);
@@ -25,6 +44,4 @@ $(document).ready(function(){
     Culqi.createToken();
   });
 })
-
-
 
