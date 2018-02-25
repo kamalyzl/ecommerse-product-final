@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <title>Index</title>
 
@@ -43,8 +44,6 @@
     </div>
   </nav>
 
-
-
   <!-- SLIDER  BANNER-->
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -67,7 +66,6 @@
     </a>
   </div>
 
-
   <div class="container-fluid">
     <p></p>
     <div class="d-flex flex-wrap" id="contente-search">
@@ -82,45 +80,55 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="row">
+      <div style="text-align: center;padding:20px">
+        <a href="#" id="buyButton" class="btn btn-primary" role="button">Pagar ahora</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form action="" method="POST" id="culqi-card-form">
+          <div>
+            <label>
+              <span>Correo Electrónico</span>
+              <input type="text" size="50" data-culqi="card[email]" id="card[email]">
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Número de tarjeta</span>
+              <input type="text" size="20" data-culqi="card[number]" id="card[number]">
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>CVC</span>
+              <input type="text" size="4" data-culqi="card[cvc]" id="card[cvc]">
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Fecha expiración (MM/YYYY)</span>
+              <input type="text" size="2" data-culqi="card[exp_month]" id="card[exp_month]">
+            </label>
+            <span>/</span>
+            <input type="text" size="4" data-culqi="card[exp_year]" id="card[exp_year]">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-<!--Aquí creamos el formulario de captura de la tarjeta -->
-    <form action="" method="POST" id="culqi-card-form">
-        <div>
-        <label>
-         <span>Correo Electrónico</span>
-      <input type="text" size="50" data-culqi="card[email]" id="card[email]">
-    </label>
-  </div>
-  <div>
-    <label>
-      <span>Número de tarjeta</span>
-      <input type="text" size="20" data-culqi="card[number]" id="card[number]">
-    </label>
-  </div>
-  <div>
-    <label>
-      <span>CVC</span>
-      <input type="text" size="4" data-culqi="card[cvc]" id="card[cvc]">
-    </label>
-  </div>
-  <div>
-    <label>
-      <span>Fecha expiración (MM/YYYY)</span>
-      <input type="text" size="2" data-culqi="card[exp_month]" id="card[exp_month]">
-    </label>
-    <span>/</span>
-    <input type="text" size="4" data-culqi="card[exp_year]" id="card[exp_year]">
-  </div>
-  <div>
-    <button type="submit" name="enviar">Pagar mi monto</button>
-  </div>
-</form>
-
-
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
   <!-- Incluyendo .js de Culqi-->
   <script src="https://checkout.culqi.com/v2"></script>
 
