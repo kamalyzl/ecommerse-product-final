@@ -21,5 +21,13 @@
 3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
    (puedes solicitar apoyo de tus profes para este paso).
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+# Pasarela de pagos **CULQI API**
+**Culqi** permite a los comercios poder aceptar pagos en línea con tarjetas de crédito, débito o prepagadas, de forma rápida y segura. Una vez capturada la información de la tarjeta, puedes crear un cargo inmediatamente o de forma recurrente.
+
+Finalmente, para este proyecto usamos las llaves de prueba de modo que las transacciones nunca pasan por las redes bancarias y no tienen ningún costo. (¡Recuerda usar tarjetas de prueba, no tarjetas reales al probar!).
+
+#### Tarjetas de prueba
+
+La información real de tarjetas de crédito o débito no pueden ser usadas para realizar pruebas en el entorno de integración. Usa cualquiera de estas tarjetas para realizar una cargo exitoso.
+
+![Sin titulo](public/assets/doc/tarjetas_prueba.png)
