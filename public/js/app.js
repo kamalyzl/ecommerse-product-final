@@ -1,5 +1,4 @@
 
-
 // Usamos libreria page.js para generar nuestras rutas dentro de la misma página
 page('/', index);
 page('/:categories', categories);
