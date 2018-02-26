@@ -68,14 +68,38 @@ $btn.click(function(event) {
       <h5 class="card-title">S/. ${element.price}</h5>
       <h6 class="card-title">${element.listing_type_id}</h6>
       <p class="card-text">${element.title}.</p>
-      <a class="btn btn-primary" id="product" price = "${element.price}" title = "${element.listing_type_id}">Comprar</a>
+      <input class="car btn btn-primary" type="button" value="AÑADIR AL CARRITO" price="${element.price}" title="${element.listing_type_id}" />
       </div>
       </div>`);
     });
     input.val('');
+    // configuración inicial del carrito 
+    paypal.minicart.render({
+      strings: {
+        button: 'Pagar'
+        , buttonAlt: 'Total'
+        , subtotal: 'Total:'
+        , empty: 'No hay productos en el carrito'
+      }
+    });
+
+    // Eventos para agregar productos al carrito
+    $('.car').on('click', function(event) {
+      console.log($(this));
+      console.log(event.target);
+
+      event.stopPropagation();
+      paypal.minicart.cart.add({
+        // Cuenta paypal para recibir el dinero
+        business: 'kamaly.kazal@gmail.com', 
+        item_name: $(this).attr('title'),
+        amount: $(this).attr('price'),
+        currency_code: 'PEN',
+      });
+    });
   });  
 });
-
+ 
 
 // Funcion que lista los productos de cada categoria al momento de seleccionar
 function list(ctx) {
@@ -101,3 +125,5 @@ function list(ctx) {
   }); 
   */
 }
+
+  
