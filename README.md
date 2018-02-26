@@ -1,25 +1,29 @@
-# E-commerce Produc Final
 
-* **Track:** _Especialización Front-end_
-* **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
-* **Unidad:** _Producto final_
+# FORO DE OPINIÓN
 
-***
 
-## Flujo de trabajo
+## Descripción
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+El reto de este proyecto consiste en crear un foro utilizando **Foro API**, crearemos un nuevo tema y podremos comentarlo.  
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+ #### Las condiciones son las siguientes:
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+* Visualizarse en vista mobile.
+* Usar **API Foro API** para los datos.
+ 
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+## Herramientas utilizadas 
+ 1. **HTML 5** : Estructura de la página.
+ 2. **JQUERY** : Lenguaje de programación.
+ 4. **AJAX** : Herramienta para manipular la data. 
+ 4. **BOOSTRAP** : Utilizado en el diseño. 
+
+
+## Resultado
+
+![Resultado](public/assets/images/slider1.jpg)
+
+![Resultado](public/assets/images/slider2.jpg)
 
 # Pasarela de pagos **CULQI API**
 **Culqi** permite a los comercios poder aceptar pagos en línea con tarjetas de crédito, débito o prepagadas, de forma rápida y segura. Una vez capturada la información de la tarjeta, puedes crear un cargo inmediatamente o de forma recurrente.

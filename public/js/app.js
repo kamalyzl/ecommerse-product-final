@@ -1,4 +1,5 @@
 
+
 // Usamos libreria page.js para generar nuestras rutas dentro de la misma página
 page('/', index);
 page('/:categories', categories);
@@ -89,12 +90,14 @@ $btn.click(function(event) {
   containerSearch.html('');
   $.get(`https://api.mercadolibre.com/sites/MPE/search?condition=new&q=${input.val()}`, function(data, status) {
     data.results.forEach(element => {
+      console.log(element);
       containerSearch.append(` <div class="card m-2" style="width: 18rem;">
       <img class="card-img-top" src="${element.thumbnail}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">S/. ${element.price}</h5>
+        <h6 class="card-title">${element.listing_type_id}</h6>
         <p class="card-text">${element.title}.</p>
-        <a href="#" class="btn btn-primary" id="btn-pay">Comprar</a>
+        <a class="btn btn-primary" id="product" price = "${element.price}" title = "${element.listing_type_id}">Comprar</a>
       </div>
     </div>`);
     });
