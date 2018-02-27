@@ -1,7 +1,6 @@
 
 # ECOMMERSE SPA
 
-
 ## Descripción
 
 El reto consiste en crear una página comercial, donde usando diferentes Apis podremos mostrar productos utilizando un buscador o elegiendo su categoria desde la barra de navegación.
@@ -13,9 +12,7 @@ El reto consiste en crear una página comercial, donde usando diferentes Apis po
 * Usar **API PAYPAL** para el método de pago.
 * Página web single page aplication **SPA**.
 
- 
-
-## Herramientas utilizadas 
+ ## Herramientas utilizadas 
  * **HTML 5** : Maquetado de la página.
  * **JQUERY** : Libreria basado en JavaScript para la programación.
  * **AJAX** : Método para hacer las peticiones al API. 
